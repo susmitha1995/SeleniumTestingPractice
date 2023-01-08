@@ -1,0 +1,21 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name ="Suite1"> <!--parallel="tests" thread-count="2"-->
+    <listeners><listener class-name="ListenersExample"></listener></listeners>
+    <test thread-count="5" name="test1">
+       <!-- <parameter name="paramValue" value="started"></parameter>-->
+        <groups>
+            <run>
+                <include name="autocomplte"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="AutoComplete"/>
+           <!-- <class name="FileDownload"/>-->
+   <!--<methods>
+      <include name="fileDownload">
+      </include>
+    </methods>-->
+        </classes>
+    </test>
+</suite>
